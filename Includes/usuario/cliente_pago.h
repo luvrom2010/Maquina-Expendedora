@@ -8,7 +8,7 @@ namespace Maquina_Expendedora {
     class ClientePago {
         //That class has the method for the Costumer can paid the price of the products
     public:
-        void pagarCuenta(Cliente& cliente, double change);
+        static void pagarCuenta(Cliente& cliente, double change);
     };
 
 }

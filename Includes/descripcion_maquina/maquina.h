@@ -12,6 +12,8 @@ namespace Maquina_Expendedora{
         double dinero; //Money
 
         Maquina(std::map<std::string, int> obj_products, double obj_money);
+
+        Maquina(const std::map<std::string, int> &obj_productos, double obj_dinero);
     };
 }
 

@@ -11,6 +11,7 @@ namespace Maquina_Expendedora {
     class Producto {
         std::string nombre; //Product's name
         double precio; //Product's price
+        int stock;
 
     public:
         Producto(const std::string& obj_name, double precio);
@@ -20,6 +21,12 @@ namespace Maquina_Expendedora {
 
         double getPrecio() const;
             //Get the price of the Product
+
+        int getStock() const;
+            //Get the stock
+
+        void setStock();
+            //Add the stock to the Product
     };
 } // Maquina_Expendedora
 

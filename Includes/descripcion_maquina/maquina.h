@@ -1,19 +1,21 @@
 #ifndef MAQUINA_H
 #define MAQUINA_H
-#include <map>
-#include <string>
+#include <vector>
+#include "productos/producto.h"
 
 namespace Maquina_Expendedora{
 
     class Maquina {
         //The class 'MaquinaExpendedora' defines the atributes to get access at the products and the stock also contains the money of the machine
+        double dinero = 2500;
+        std::vector<Producto> productos_maquina; //List of Products that have the class
+
     public:
-        std::map<std::string, int> productos; //Vector of products
-        double dinero; //Money
 
-        Maquina(std::map<std::string, int> obj_products, double obj_money);
+        void anadirProductos(Producto& producto);
+        //Method to add to the vector Products that the Costumer can buy
 
-        Maquina(const std::map<std::string, int> &obj_productos, double obj_dinero);
+        void showProductos();
     };
 }
 

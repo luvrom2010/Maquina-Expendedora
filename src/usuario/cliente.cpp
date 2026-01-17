@@ -1,13 +1,20 @@
-#include "cliente.h"
+#include "usuario/cliente.h"
+#include "productos/producto.h"
 #include <string>
 #include <vector>
 
 namespace Maquina_Expendedora {
-    Cliente::Cliente(const std::string& obj_nombre, double obj_dinero, const std::vector<std::string>& obj_producto_deseado) {
-        //Cliente's class constructor: name, money and searched products
+    Cliente::Cliente(const std::string& obj_nombre, double obj_dinero) {
         nombre = obj_nombre;
         dinero = obj_dinero;
-        producto_deseado = obj_producto_deseado;
     }
 
+    void Cliente::pagarMonto(double precio_total) {
+        if (precio_total > dinero) return;
+        dinero -= precio_total;
+    }
+
+    void Cliente::anadirProducto(const Producto& obj_producto_anadido) {
+        producto_deseado.push_back(obj_producto_anadido);
+    }
 }

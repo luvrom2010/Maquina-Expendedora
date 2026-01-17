@@ -5,10 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(Includes)
-include_directories(Includes/descripcion_maquina)
-include_directories(Includes/sistema_cambio)
-include_directories(Includes/usuario)
-include_directories(Includes/venta_compra)
 
 add_executable(maquina_expendedora
         src/main.cpp
@@ -25,4 +21,5 @@ add_executable(maquina_expendedora
         src/venta_compra/validacion_compra.cpp
         src/venta_compra/validacion_venta.cpp
         src/venta_compra/venta.cpp
+        src/productos/producto.cpp
 )

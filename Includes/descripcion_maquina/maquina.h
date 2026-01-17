@@ -12,10 +12,10 @@ namespace Maquina_Expendedora{
 
     public:
 
-        void anadirProductos(Producto& producto);
+        void anadirProductos(Producto producto);
         //Method to add to the vector Products that the Costumer can buy
 
-        void showProductos();
+        const std::vector<Producto>& getProductos() const;
     };
 }
 

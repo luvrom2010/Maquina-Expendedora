@@ -9,14 +9,11 @@ include_directories(Includes)
 add_executable(maquina_expendedora
         src/main.cpp
         src/descripcion_maquina/maquina.cpp
-        src/descripcion_maquina/muestra_producto.cpp
+        src/descripcion_maquina/visualizar_productos_consola.cpp
         src/sistema_cambio/devolucion_dinero.cpp
         src/sistema_cambio/recibir_pago.cpp
         src/sistema_cambio/revision_dinero.cpp
         src/usuario/cliente.cpp
-        src/usuario/cliente_pago.cpp
-        src/usuario/cliente_productos.cpp
-        src/usuario/cliente_revision_dinero.cpp
         src/venta_compra/compra.cpp
         src/venta_compra/validacion_compra.cpp
         src/venta_compra/validacion_venta.cpp

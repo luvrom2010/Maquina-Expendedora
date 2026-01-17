@@ -16,7 +16,7 @@ namespace Maquina_Expendedora {
     public:
         Producto(const std::string& obj_name, double precio);
         //Class Constructor
-        std::string getNombre();
+        std::string getNombre() const;
             //Get the name of the Product
 
         double getPrecio() const;

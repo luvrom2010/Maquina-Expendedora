@@ -13,7 +13,7 @@ namespace Maquina_Expendedora {
         stock = 0;
     }
 
-    std::string Producto::getNombre() {
+    std::string Producto::getNombre() const{
         return nombre;
     }
 
